@@ -1,0 +1,280 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+.left{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    width: calc(100% / 12 * 4);
+    padding: 100px 100px 0;
+}
+.right{
+    background: url(./image_summer.png) no-repeat center center / cover;
+    width: calc(100% / 12 * 8);
+    height: 100vh;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.just-logo {
+    display: none;
+}
+.list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list__item{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.list__item:not(:last-child){
+    margin-right: 30px;
+}
+.list-item__link{
+    text-decoration: none;
+    color: #6a7078;
+}
+.list-item__link:hover {
+    color: blue;
+}
+#content {
+    margin-top: 334px;
+}
+#success-logo {
+    display: none;
+}
+#heading {
+    font-family: "Georgia";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 44px ;
+    color: #131821;
+}
+#subHeading {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6a7078;
+}
+#form {
+    margin-top: 73px;
+    display: inline-flex;
+    align-items: center;
+}
+.input {
+    width: 730px;
+    height: 70px;
+    border: 1px solid #e3e3e4;
+    border-left: 4px solid #4066a5;
+    border-right: none; 
+}
+#button {
+    background-color: #ffffff;
+    width: 83px;
+    height: 70px;
+    border: 1px solid lightgray;
+    border-left: none;
+    position: relative;
+}
+#form2 {
+    margin-top: 54px;
+    margin-left: 40px;
+}
+.checkbox-text {
+    color: #6a7078;
+    width: 359px;
+    font-size: 16px;
+    line-height: 28px;
+    font-style: normal;
+}
+.termsOfService  {
+    color: #111;
+}
+#line {
+    width: 80%;
+    height: 1px;
+    margin-top: 50px;
+    margin-left: 140px;
+    color: #e3e3e4;
+    border: 1px solid #e3e3e4;
+}
+#social-icons {
+    width: 400px;
+    height: 46px;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 0 20px;
+    min-height: 10vh;
+}
+#social-icons i {
+    width: 46px;
+    height: 15px;
+    padding: 5px 15px;
+    border: 1px solid #e3e3e4;
+    border-radius: 100%;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#social-icons i:hover {
+    border-color: blue;
+    cursor: pointer;
+    color: crimson;
+}
+#social-icons .fa-facebook-f:hover {
+    color: darkblue;
+}
+#social-icons .fa-twitter:hover {
+    color: deepskyblue;
+}
+
+
+@media screen and (max-width: 768px){
+    .left{
+        position: absolute;
+        width: 70%;
+        left: 5%;
+    }
+    .right{
+        width: 100%;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        background-color: #ffffff;
+        padding: 20px;
+        content: '';
+        left: 0;
+        right: 0;
+        justify-content: space-between;
+    }
+    .wrapper{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .left{
+        padding: 60px 60px 0;
+    }
+}
+@media screen and (max-width: 576px){
+    .left{
+        left: 3%;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 575px){
+    .left{
+        left: 4%;
+        width: 60%;
+    }
+    .logo-text {
+        display: none;
+    }
+    .logo .just-logo {
+        display: block;
+        width: 25px;
+    }
+    .list__item{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #content {
+        margin-top: 0;
+    }
+    
+    #heading {
+        width: 295px;
+        font-family: "Georgia";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 34px ;
+        margin-top: 20px;
+        color: #131821;
+    }
+    #subHeading {
+        width: 295px;
+        font-family: "Arial";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        color: #6a7078;
+    }
+    #form {       
+        margin: 20px auto;
+    }
+    .input {
+        width:25px;
+        height: 60px;
+        border: 1px solid #e3e3e4;
+        border-left: 4px solid #4066a5;
+        border-right: none; 
+    }
+    #button {
+        background-color: #ffffff;
+        width: 43px;
+        height: 60px;
+        border: 1px solid #FFFFFF;
+        border-left: none;
+        position: relative;
+    }
+    #form2 {
+        margin-top: 20px;
+        margin-left: 21px;
+    }
+    .checkbox-text {
+        color: #6a7078;
+        width: 359px;
+        font-size: 14px;
+        line-height: 24px;
+        font-style: normal;
+    }
+    #line {
+        width: 80%;
+        height: 1px;
+        margin: 10px auto;
+        color: #e3e3e4;
+        border: 1px solid #e3e3e4;
+    }
+    #social-icons {
+        width: 214px;
+        height: 26px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    #social-icons i {
+        width: 16px;
+        height: 16px;
+        padding: 5px 15px;
+        border: 1px solid #e3e3e4;
+        border-radius: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
